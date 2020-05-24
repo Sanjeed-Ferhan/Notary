@@ -20,52 +20,57 @@ background: #515C6E;
 .right{
 	float: right;
 	width: 22%;
-	padding: 0;
-	margin: 0;
-
 }
 .right ul{
-display: inline-block;
+display: inline;
+padding-left: 0px;
+transition: 0.3s;
 }
 .right ul li{
-
+	margin-top: 15px;
 	margin-right: 10px;
 	float: left;
 	list-style: none;
 	color: white;
-	transition: 0.5;
+	
 }
-.right ul li a button{
-width: 50px;
-border-style: none;
-background-color: #bd233f;
-color: white;
-font-size: 10px;
-text-align: center;
-transition-timing-function: ease-in-out;}
+.right ul li i:hover{
+	color: #bd233f;
+}
+.right button {
+	margin-left: 10px;
+	width: 100px;
+	height: 50px;
+	border-style: none;
+	background-color: #bd233f;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+.right button:hover{
 
-.right ul li a{
-	display: inline-block;
 }
+
 .right ul li a i{
-color: white;
-font-size: 20px;
+	font-size: 20px;
+	color: white;
 }
 
 
 
 /*Menu Start*/
 .header{
-padding: 10px;
+	padding: 10px;
 }
 .wrapper{
-width: 80%;
-overflow: hidden;
-margin: 0 auto;
+	width: 80%;
+	overflow: hidden;
+	margin: 0 auto;
 }
 .logo{
-width: 20%;
-float: left;
+	width: 20%;
+	float: left;
 }
 .logo img{
 	width: 100%;
@@ -74,6 +79,9 @@ float: left;
 	float: right;
 	width: 70%;
 	transition: 0.3s;
+}
+#menu1 a{
+	color: #D9446A;
 }
 .menubar ul li{
 
@@ -93,8 +101,13 @@ float: left;
 	padding: 0px;
 }
 .menubar ul li a:hover{
-	color:#B96273;
+	color:#D9446A;
 }
+@media screen and (max-width: 1360px) {
+
+	
+}
+
 
 /*Banner start*/
 .banner{
@@ -131,8 +144,13 @@ float: left;
 	text-align: center;
 	border-radius: 4px;
 }
+.content button:hover{
+	font-size: 150%;
 
-/*Banner start*/
+  }
+
+
+/*Banner end*/
 
 /*Middle Section start */
 .middle{
@@ -159,6 +177,7 @@ text-align: center;
 	width: 90px;
 	height: 90px;
 }
+
 .item1{
 	width: 33%;
 	float: left;
@@ -201,10 +220,13 @@ margin-top: 130px;
 	margin-top: 50px;
 	margin-bottom: 160px;
 	width: 120px;
-
-
 	height: 40px;
+	cursor: pointer;
 }
+.process button:hover{
+	
+}
+
 .video{
 	float: right;
 	width: 40%;
@@ -242,17 +264,20 @@ margin-top: 130px;
 }
 
 .f_box{
-margin: 0 auto;	
-text-align: center;
-float: left;
-width: 32.5%;
-margin-right: 3px;
-margin-bottom: 40px;
- box-shadow: 5px #888888;
- cursor: pointer;
+	margin: 0 auto;	
+	text-align: center;
+	float: left;
+	width: 32.5%;
+	margin-right: 3px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	border: 1px #515C6E;
+	transition:0.3s;
 }
 .f_box:hover{
-	color: #535D69;
+	color:#BD233F ;
+	box-shadow: 1px 10px 10px  #515C6E;
+
 }
 .f_link {
 	margin-top: 80px;
@@ -266,6 +291,7 @@ margin-bottom: 40px;
 }
 f_link a:hover{
 	color:#BD233F;
+
 }
 
 /*Feature end*/
@@ -295,6 +321,7 @@ margin-bottom: 0px;
 }
 .contact ul{
 	padding: 0;
+	transition: 0.3s;
 }
 .contact ul li {
 
@@ -302,10 +329,16 @@ margin-bottom: 0px;
 	list-style: none;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	cursor: pointer;
+
+}
+.contact ul li:hover {
+
+	color:#BD233F ;
 
 }
 .contact ul li i{
-	
+	width: 20px;	
 	color: #BD233F;
 }
 
@@ -318,6 +351,7 @@ margin-bottom: 0px;
 	font-size: 30px;
 	margin-right: 4px;
 	margin-top: 5px;
+	cursor: pointer;
 }
 
 .social i:hover{
@@ -329,20 +363,33 @@ margin-bottom: 0px;
 	margin-right: 50px;
 }
 .link{
-	   
+	  
 }
 .link ul{
 	padding: 0px;
+	transition: 0.3s;
 }
 .link ul li{
 	list-style: none;
 	
 	margin-bottom: 5px;
+
 }
 .link ul li a{
+	cursor: pointer;
+	color:  #515C6E;
 	text-decoration: none;
 	
 }
+
+.link ul li a i{
+	width: 20px;
+}
+.link ul li a:hover{
+	color:  #BD233F;
+	
+}
+
 .content3{
 	width: 25%;
 	float: left;
@@ -353,7 +400,7 @@ margin-bottom: 0px;
 	
 }
 .email{
-	
+	transition: 0.5;
 }
 .email input[type="email"]{
 
@@ -373,6 +420,10 @@ margin-bottom: 0px;
 	border: none;
 	margin-left: -6px;
 	border-radius: 1px;
+	cursor: pointer;
+}
+.email button:hover{
+	
 }
 
 
